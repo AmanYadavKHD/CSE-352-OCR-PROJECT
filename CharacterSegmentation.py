@@ -1,5 +1,3 @@
-# As a skeleton repo https://github.com/dishank-b/Character_Segmentation was used.
-# But here a lot of refactoring, bug-fixing and new functionality was added
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
