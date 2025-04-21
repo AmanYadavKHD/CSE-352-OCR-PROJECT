@@ -177,7 +177,7 @@ if args.mode == "train":
     train_dataset = CustomDataset(root_dir=train_dir)
     test_dataset = CustomDataset(root_dir=test_dir)
 
-    # ✅ Load dataset ONLY for training
+    # Load dataset ONLY for training
     train_dataset_x, train_dataset_y = train_dataset.getitem()
     test_dataset_x, test_dataset_y = test_dataset.getitem()
 
@@ -205,7 +205,7 @@ elif args.mode == "test":
     model.load_state_dict(torch.load("model.pth", map_location=device))
     model.eval()
 
-    # ✅ Inference Example (NO dataset loading)
+    # Inference Example (NO dataset loading)
     test_image = cv2.imread("test_image.png", cv2.IMREAD_GRAYSCALE)
     test_image = torch.tensor(test_image).unsqueeze(0).unsqueeze(0).float().to(device)
 
