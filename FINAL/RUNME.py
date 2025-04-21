@@ -78,7 +78,7 @@ inverted_class_mapping = {
 def runcode(image_path=''):
    
     # Get the image path from the user
-    print('\nEnter image path (CTRL+C to exit):', end='', flush=True)  # ✅ Fix here
+    print('\nEnter image path (CTRL+C to exit):', end='', flush=True)  #  Fix here
     image_path = str(input())  
 
 
@@ -152,20 +152,20 @@ if __name__ == '__main__':
     # os.system('cls' if os.name == 'nt' else 'clear')
 
     # # Load the trained model
-    # print("Loading model...", flush=True)  # ✅ Force print immediately
+    # print("Loading model...", flush=True)  # Force print immediately
     # torch.cuda.synchronize()
     # model = CNN().cuda()
     # model.load_state_dict(torch.load("model.pth", map_location="cuda"))
 
     # model.eval()
-    # print("Model loaded successfully.", flush=True)  # ✅ Ensure print shows up
+    # print("Model loaded successfully.", flush=True)  #  Ensure print shows up
     # runcode()
 
     #clear terminal
     os.system('cls' if os.name == 'nt' else 'clear')
 
     # Load the trained model
-    print("Loading model...", flush=True)  # ✅ Force print immediately
+    print("Loading model...", flush=True)  #  Force print immediately
     torch.cuda.synchronize()
     num_classes = 157725
     # num_classes = len(inverted_class_mapping)
@@ -173,5 +173,5 @@ if __name__ == '__main__':
     model.load_state_dict(torch.load("model.pth", map_location="cuda"))
 
     model.eval()
-    print("Model loaded successfully.", flush=True)  # ✅ Ensure print shows up
+    print("Model loaded successfully.", flush=True)  #  Ensure print shows up
     runcode()
