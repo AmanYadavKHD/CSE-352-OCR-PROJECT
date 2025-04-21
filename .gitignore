@@ -1,0 +1,6 @@
+data/
+env/
+FINAL/cache
+__pycache__/
+cache/
+model.pth
